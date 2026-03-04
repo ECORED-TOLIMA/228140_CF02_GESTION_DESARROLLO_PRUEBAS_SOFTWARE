@@ -2,31 +2,95 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
+    top: 70%
     right: 10%
   &-2
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: float2 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 34%
+    right: 80%
+  &-3
+    animation: float2 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 46%
+    right: 20%
 
 @keyframes float1
   0%
     transform: translateY(20px)
   100%
     transform: translateY(0px)
-  
-.banner-principal .tarjeta
-  background-position: left 50% !important
+@keyframes float2
+  0%
+    transform: translateX(20px)
 
-.banner-principal__row .banner-principal__img
-  width: 400px !important  
+  100%
+    transform: translateX(0px)
 
-.titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: white !important
+.banner-principal
+  .container.tarjeta
+    background-image: url("../assets/curso/portada/fondo-banner-principal.png")
+    background-size: cover
+    background-position: center
+    @media (max-width: $bp-max-md)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-md.png") !important
+    @media (max-width: $bp-max-xs)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-sm.png") !important
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/imgbaner.png") !important
 
 .banner-interno__titulo__icono i
   color: $color-primario
 
 figcaption
   font-weight: normal
+
+.cajon.color-primario
+  background-color: #DFEFFF
+
+.bloque-texto-g.color-primario
+  background-color: #19538D
+
+.tabs-b__tab
+  background-color: #9C2424
+  color: white
+
+.tabs-b__tab--active
+  background-color: #DFEFFF
+  color: black
+
+.BMG1
+  background: linear-gradient(180deg, #fff, #E5F2FF, #fff)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  margin-inline: -3rem !important
+  @media (max-width: $bp-max-sm)
+    margin-inline: -1.5rem !important
+.BG02
+  background-color: #DFEFFF
+.tarjeta.BG03
+  background-color: #F1E2FF
+
+.linea-tiempo-d__item--selected .linea-tiempo-d__item__content__title
+  background-color: #D2F9EF
+  
+.linea-tiempo-d__item__content__title
+  background-color: #EEE7E7
+.linea-tiempo-d__item__content__slot
+    background-color:#D2F9EF
+    
+      
+.tarjeta--gris.linea-tiempo-d__item__number
+  background-color: $color-acento-botones
+  color: white !important
+
+.linea-tiempo-d.color-acento-botones .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
+  background-color: #D2F9EF
+  color: black !important
+.text-codigo
+  color: #4dd0e1 !important
+
+.BG03
+  background-color: #EEE1E1
