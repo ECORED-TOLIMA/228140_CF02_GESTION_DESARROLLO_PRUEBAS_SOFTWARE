@@ -6,30 +6,30 @@
       .titulo-principal__numero
         span 4
       h1 Tema 4
-    .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5
+    .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-4
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require('@/assets/curso/Temas/tema4/img1.png')})`}"
       )
       .bloque-texto-g__texto.p-4
-        p JavaScript es un lenguaje de programación de secuencia de comandos para la web; es un lenguaje que no necesita compilador, como otros #[i lenguajes] y se ejecuta directamente en el navegador.
+        p JavaScript es un lenguaje de programación de secuencia de comandos para la #[i web]; es un lenguaje que no necesita compilador, como otros lenguajes y se ejecuta directamente en el navegador.
         br
         br
         p.mb-0 Es momento de profundizar en los elementos de empleo del JavaScript y para ello, se sugiere la siguiente información, procurando llevar registro de los aspectos más destacados en la libreta personal de apuntes
-    br
+
     .contenedor-titulo.d-flex.align-items-center.mb-4(data-aos="fade-left")
       .logo-box.me-3
         i.fas.code-terminal.text-white
       .titulo-bg.py-2.px-4
         h4.mb-0 Empleo de JavaScript
     br
-    p.mb-0 JavaScript se utiliza, normalmente, en la web pero también para:
+    p.mb-0 JavaScript se utiliza, normalmente, en la #[i web] pero también para:
     br
-    .cajon.color-primario-2.p-4
+    .tarjeta.BG03.p-4
       .row
-        .col-3
+        .col-lg-3
           figure
-          img(src="@/assets/curso/Temas/tema4/img2.svg" alt="Adornos flotantes")
-        .col-9
+            img(src="@/assets/curso/Temas/tema4/img2.svg" alt="Adornos flotantes")
+        .col-lg-9
           p.mb-0 • Desarrollo de todo el backend de una aplicación, programando con Node.js, que sigue siendo JavaScript.
           p.mb-0 • Sistemas operativos.
           p.mb-0 • Servidores de internet.
@@ -68,13 +68,13 @@
             
             //- .order-2 en móvil (abajo), .order-lg-1 en escritorio (izquierda)
             .col-lg-8.order-2.order-lg-1
-              p La interacción del usuario con una aplicación, página o sitio web se establece como evento; por lo tanto, un evento es una acción que el usuario quiere hacer en determinada parte de la aplicación. Por ejemplo, darle clic a un botón o cambiar un valor de un elemento de texto, entre otros.
-              .cajon.color-secundario.p-4
-                .row.align-items-center
-                  .col-auto
+              p La interacción del usuario con una aplicación, página o sitio #[i web] se establece como evento; por lo tanto, un evento es una acción que el usuario quiere hacer en determinada parte de la aplicación. Por ejemplo, darle clic a un botón o cambiar un valor de un elemento de texto, entre otros.
+              .tarjeta-cajon-secundario.p-4
+                .row.justify-content-center.align-items-center
+                  .col-lg-2.d-none.d-lg-block
                     figure
-                      img(src="@/assets/curso/Temas/tema4/img5.svg" alt="Adornos flotantes" style="width: 50px")
-                  .col
+                      img(src="@/assets/curso/Temas/tema4/img5.svg" alt="Adornos flotantes" style="width: 150px")
+                  .col-lg-10
                     p.mb-0 Estas acciones se capturan mediante manejadores de eventos ya establecidos y se programan mediante funciones en JavaScript.
 
           //- Cuarta fila: Ejemplo de funcionamiento
@@ -90,16 +90,17 @@
                 p Este es un ejemplo práctico de cómo funciona un evento. En el momento en que el cursor esté en el campo de texto, automáticamente arroja la alerta.
                 figure.mt-3
                   img(src="@/assets/curso/Temas/tema4/img7.png" alt="")
-    br
-    p.text-center En la siguiente tabla se especifican los eventos que pueden utilizarse:
-    br
-    .row
-      .col-1
-      .col-10
-        .titulo-sexto.color-acento-contenido.mb-3
-        h5 Tabla 1.
-        span Eventos
-        .tabla-a.color-primario
+
+    p.text-center.mb-4 En la siguiente tabla se especifican los eventos que pueden utilizarse:
+
+    .row.justify-content-center.align-items-center
+      .col-lg-10
+        .titulo-sexto.color-acento-contenido(data-aos="fade-left")
+          h5 Tabla 1. 
+          span Eventos
+    .row.justify-content-center.align-items-center
+      .col-lg-10(data-aos="fade-left")
+        .tabla-b.color-acento-contenido.mb-5
           table
             thead
               tr
@@ -107,7 +108,7 @@
                 th Se ejecuta cuando
             tbody
               tr
-                td Vulgar
+                td onAbort
                 td El usuario interrumpe la carga de una imagen.
               tr
                 td onBlur
@@ -120,7 +121,62 @@
                 td Se hace clic en un objeto o formulario.
               tr
                 td onDblClick
-                td Se hace doble clic en un objeto o formulario
+                td Se hace doble clic en un objeto o formulario.
+              tr
+                td onDragDrop
+                td El usuario arrastra y suelta un objeto en la ventana.
+              tr
+                td onError
+                td La carga de un documento o imagen produce un error.
+              tr
+                td onFocus
+                td Una ventana, marco o elemento de formulario recibe el foco.
+              tr
+                td onKeyDown
+                td El usuario pulsa una tecla.
+              tr
+                td onKeyPress
+                td El usuario mantiene pulsada una tecla.
+              tr
+                td onKeyUp
+                td El usuario libera una tecla.
+              tr
+                td onLoad
+                td El navegador termina la carga de una ventana.
+              tr
+                td onMouseDown
+                td El usuario pulsa un botón del ratón.
+              tr
+                td onMouseMove
+                td El usuario mueve el puntero.
+              tr
+                td onMouseOut
+                td El puntero abandona un área o enlace.
+              tr
+                td onMouseOver
+                td El puntero entra en un área o imagen.
+              tr
+                td onMouseUp
+                td El usuario libera un botón del mouse.
+              tr
+                td onMove
+                td Se mueve una ventana o un marco.
+              tr
+                td onReset
+                td El usuario limpia un formulario.
+              tr
+                td onResize
+                td Se cambia el tamaño de una ventana o marco.
+              tr
+                td onSelect
+                td Se selecciona el texto del campo texto o área de texto de un formulario.
+              tr
+                td onSubmit
+                td El usuario envía un formulario.
+              tr
+                td onUnload
+                td El usuario abandona una página.
+    
     separador
     .titulo-segundo.color-primario
       h2 4.1. API
@@ -177,7 +233,7 @@
                        p.text-white.ms-3.mb-1 var mmyLatitude = position.coords.latitude;
 
       //- Tercera fila: Eventos (Aquí reordenamos para que la imagen quede arriba en móvil)
-      .row(titulo="file")
+      .row(titulo="File")
         //- .order-1 en móvil (arriba), .order-lg-2 en escritorio (derecha)
         p La API File provee información de archivos y permite que el JavaScript tenga acceso a su contenido. Los objetos File que se recuperan a través del objeto FileList (en-US), retornan utilizando el elemento &lt;input&gt;. El objeto File puede ser utilizado en cualquier contexto: FileReader, URL.createObjectURL(), createImageBitmap() (en-US), y XMLHttpRequest.send().
           figure.mt-3
@@ -186,51 +242,64 @@
       //- Cuarta fila: Ejemplo de funcionamiento
       .row(titulo="File (propiedades)")
         p Revise en la siguiente tabla, algunas de las propiedades de File y su descripción:
-        .tabla-a.color-primario
-          table
-            thead
-              tr
-                th Propiedad
-                th Descripción
-            tbody
-              tr
-                td File.lastModified
-                td Retorna el último tiempo que el archivo se modificó, en milsegundos desde la época UNIX (1 de enero de 1970 a medianoche).
-              tr
-                td File.lastModifiedDate
-                td Retorna la última fecha (en un objeto DateDate) de modificación del archivo referenciada por el objeto File.
-              tr
-                td File.name
-                td Retorna el nombre del archivo referenciado por el objeto File.
-              tr
-                td File.webkitRelativePath
-                td Retorna la ruta relativa de la URL del File.
-              tr
-                td File.size
-                td Retorna el tamaño del archivo en bytes.
+        .row.justify-content-center.align-items-center
+          .col-lg-10
+            .titulo-sexto.color-acento-contenido(data-aos="fade-left")
+              h5 Tabla 2. 
+              span File propiedades
+        .row.justify-content-center.align-items-center
+          .col-lg-10
+            .tabla-a.color-primario
+              table
+                thead
+                  tr
+                    th Propiedad
+                    th Descripción
+                tbody.BG06
+                  tr
+                    td File.lastModified
+                    td Retorna el último tiempo que el archivo se modificó, en milsegundos desde la época UNIX (1 de enero de 1970 a medianoche).
+                  tr
+                    td File.lastModifiedDate
+                    td Retorna la última fecha (en un objeto DateDate) de modificación del archivo referenciada por el objeto File.
+                  tr
+                    td File.name
+                    td Retorna el nombre del archivo referenciado por el objeto File.
+                  tr
+                    td File.webkitRelativePath
+                    td Retorna la ruta relativa de la URL del File.
+                  tr
+                    td File.size
+                    td Retorna el tamaño del archivo en bytes.
 
       .row(titulo="File (métodos)")
         p La interfaz File no define algún método, pero los hereda de la interfaz Blob de la siguiente manera:
-        .tabla-a.color-primario
-          table
-            thead
-              tr
-                th Propiedad
-                th Descripción
-            tbody
-              tr
-                td Blob.slice([start[, end[, contentType]]])
-                td Retorna un nuevo objeto Blob conteniendo la información en el rango especificado de bytes de la fuente Blob.
-              tr
-                td Blob.stream()
-                td Transforma el archivo File en un ReadableStream (en-US) que puede ser usado para leer el contenido del File.
-              tr
-                td Blob.tex()
-                td Transforma el archivo File en una corriente (stream) para leerse hasta completarse. Retorna una promesa que se resuelve con un USVString.
-              tr
-                td Blob.arrayBuffer()
-                td Transforma el archivo File en una corriente para leerse hasta completarse. Devuelve una promesa
-      .row(titulo="Web socket")
+        .row.justify-content-center.align-items-center
+          .col-lg-10
+            .titulo-sexto.color-acento-contenido(data-aos="fade-left")
+              h5 Tabla 3. 
+              span File métodos
+        .row.justify-content-center.align-items-center
+          .col-lg-10
+            table
+              thead
+                tr
+                  th Propiedad
+                  th Descripción
+              tbody.BG06
+                tr
+                  td Blob.slice([start[, end[, contentType]]])
+                  td Retorna un nuevo objeto Blob conteniendo la información en el rango especificado de bytes de la fuente Blob.
+                tr
+                  td Blob.stream()
+                  td Transforma el archivo File en un ReadableStream (en-US) que puede ser usado para leer el contenido del File.
+                tr
+                  td Blob.tex()
+                  td Transforma el archivo File en una corriente (stream) para leerse hasta completarse. Retorna una promesa que se resuelve con un USVString.
+                tr
+                  td Blob.arrayBuffer()
+                  td Transforma el archivo File en una corriente para leerse hasta completarse. Devuelve una promesa
+      .row(titulo="#[i Web] socket")
         .col-12
           p Tecnología que permite abrir una sesión de comunicación entre el navegador del usuario y un servidor. Puede enviar mensajes a un servidor y recibir respuestas controladas, sin tener que consultar al servidor.
           .tarjeta.color-primario.p-0.mt-3.overflow-hidden
@@ -242,8 +311,8 @@
                 .p-4(style="background-color: #0d0d2b;")
                   .row.align-items-center
                     .col-md-5.mb-3.mb-md-0
-                       p.code-comment.mb-2 // Create WebSocket connection.
-                       p.text-white.mb-2 const socket = new WebSocket('ws://localhost:8080');
+                       p.code-comment.mb-2 // Create #[i WebSocket] connection.
+                       p.text-white.mb-2 const socket = new #[i WebSocket]('ws://localhost:8080');
                        p.text-white.mb-2 
                        p.code-comment.mb-2 // Connection opened
                        p.text-white.mb-2 socket.addEventListener('open', function (event) {
@@ -298,6 +367,56 @@
                       
                       p.code-comment.mb-1 // Obtiene la información almacenada desde sessionStorage
                       p.text-white.mb-1 var data = sessionStorage.getItem('key');
+    separador
+    .titulo-segundo.color-primario
+      h2 4.2. Librerías
+    
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        .tarjeta.BG03.p-4.mb-4
+          p.mb-0 Las librerías JavaScript son conjuntos de código reutilizable que facilitan la implementación de funcionalidades, reduciendo el esfuerzo y el tiempo necesarios en la creación de aplicaciones.
+        p En la siguiente tabla, se exponen las librerías más comunes y frecuentemente usadas por los desarrolladores:
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/Temas/tema4/img14.png" alt="Adornos flotantes")
+
+    .row.justify-content-center.align-items-center
+      .col-lg-10
+        .titulo-sexto.color-acento-contenido(data-aos="fade-left")
+          h5 Tabla 4. 
+          span Librerías
+    .row.justify-content-center.align-items-center
+      .col-lg-10
+        table
+          thead
+            tr
+              th Librería
+              th Descripción
+          tbody
+            tr
+              td jQuery
+              td Permite realizar tareas de una forma más fácil y rápida, manipulación DOM. Permite agregar interactividad y efectos visuales en un sitio web.
+            tr
+              td Moments.js
+              td Ayuda a trabajar con las fechas. Lo que permite, en vez de mostrar la fecha en formato “publicado el 10 de diciembre del 2021 a las 10:00 p.m.”, como lo devuelve JavaScript, esta librería lo estandariza y simplifica.
+            tr
+              td anime.js
+              td Permite animar diferentes propiedades CSS, SVG o atributos DOM en una página web. Controla los aspectos de la animación y brinda muchas formas de especificar las propiedades que se quieren animar.
+            tr
+              td D3.js
+              td Es utilizada para manipular documentos basados en datos. Proporciona una gran facilidad y flexibilidad para crear visualizaciones de datos.
+            tr
+              td Chart.js
+              td Es una librería muy fácil de utilizar y permite incluir gráficos animados e interactivos.
+            tr
+              td MathJS
+              td Librería matemática para JavaScript. Ofrece una solución integrada para trabajar con tipos de datos: números, números grandes, números complejos, fracciones, unidades y matrices.
+            tr
+              td Hammer.js
+              td Se utiliza para crear aplicaciones web que requieren realizar acciones como desplazarse, deslizar, rotar y hacer zoom en los gestos táctiles.
+            tr
+              td React
+              td Ayuda a crear interfaces interactivas para el usuario. Con esta librería permite diseñar vistas simples.
 
 </template>
 

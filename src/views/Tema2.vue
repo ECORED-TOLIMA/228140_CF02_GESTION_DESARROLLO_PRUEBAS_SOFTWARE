@@ -169,7 +169,7 @@
               p.mb-0 Tenga presente que las etiquetas &lt;meta&gt; &lt;title&gt; y &lt;link&gt; permiten mostrar contenidos más específicos o permiten crear comportamientos en el documento.
 
     separador
-    .titulo-segundo.color-secundario
+    .titulo-segundo.color-acento-contenido
       h2 2.1 Estructura del cuerpo de una página web         
     p.mb-5 La estructura del cuerpo no es más que la estructura que se crea dentro del #[i body]; normalmente se le denomina plantilla y de esta forma es posible mostrar, organizadamente y por secciones, la información que llegará al usuario.
 
@@ -197,28 +197,26 @@
           figure
             img(src="@/assets/curso/Temas/tema2/img13.svg" alt="Adornos flotantes")
 
-    .BG03.p-5
+    .BG03.p-5.mb-4 
       SlyderB(:datos="datosSlyder")
-    
-    .cajon.color-secundario.p-4
-      .row.align-items-center
-        .col-lg-4.col-md-5.mb-4.mb-md-0
-          figure
-            img(src="@/assets/curso/Temas/tema2/img20.png" alt="Imagen decorativa")
+    .row.align-items-center.mb-4
+      .col-lg-4.col-md-5.mb-4.mb-md-0
+        figure
+          img(src="@/assets/curso/Temas/tema2/img20.png" alt="Imagen decorativa")
+      
+      .col-lg-8.col-md-7
+        //- Contenedor del Título con el Logo
+        .contenedor-titulo.d-flex.align-items-center.mb-4(data-aos="fade-left")
+          .logo-box.me-3
+            i.fas.code-terminal.text-white
+          .titulo-bg.py-2.px-4
+            h4.mb-0 Elementos del contenido
         
-        .col-lg-8.col-md-7
-          //- Contenedor del Título con el Logo
-          .contenedor-titulo.d-flex.align-items-center.mb-4(data-aos="fade-left")
-            .logo-box.me-3
-              i.fas.code-terminal.text-white
-            .titulo-bg.py-2.px-4
-              h4.mb-0 Elementos del contenido
-          
-          p.mb-3 La mayoría de elementos vistos hasta este punto del componente, son elementos orientados a ofrecer metadatos (para los motores de búsqueda, &lt;meta&gt;, &lt;title&gt;) o de estructura (&lt;header&gt;, &lt;body&gt;). A continuación, se verán aquellos elementos usados para segmentar los contenidos dentro de una página o interfaz web o, simplemente, para diferenciar los contenidos de la página.
+        p.mb-3 La mayoría de elementos vistos hasta este punto del componente, son elementos orientados a ofrecer metadatos (para los motores de búsqueda, &lt;meta&gt;, &lt;title&gt;) o de estructura (&lt;header&gt;, &lt;body&gt;). A continuación, se verán aquellos elementos usados para segmentar los contenidos dentro de una página o interfaz web o, simplemente, para diferenciar los contenidos de la página.
 
 
     //- Tarjeta de Descarga
-    .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
+    .tarjeta.BG03.p-3(data-aos="zoom-in")
       .row.justify-content-around.align-items-center
         .col-3.col-sm-2.col-lg-1
           img(src="@/assets/curso/Temas/tema2/img21.svg")
@@ -226,22 +224,22 @@
           .row.justify-content-between.align-items-center
             .col.mb-3.mb-sm-0
               h3.mb-1 Elementos del contenido
-              p.text-small Para afianzar su saber en lo relacionado con los elementos del contenido, acceda a este documento. Recuerde llevar registro de los aspectos más destacados e importantes, en sueta personal de apuntes.
+              p Para afianzar su saber en lo relacionado con los elementos del contenido, acceda a este documento. Recuerde llevar registro de los aspectos más destacados e importantes, en sueta personal de apuntes.
             .col-sm-auto
               a.boton.color-acento-botones(:href="obtenerLink('/downloads/Elementos_del_contenido.pdf')" target="_blank")
                 span Descargar
                 i.fas.file-download
-    
-    .titulo-segundo.color-secundario
-      h2 Nuevos elementos #[i HTML]5
+    separador
+    .titulo-segundo.color-acento-contenido
+      h2 2.2 Nuevos elementos HTML5
 
-    p.mb-5 En respuesta a la normal evolución de los sisTemas informáticos y la necesidad permanente de mejorar las funcionalidades de desarrollo y la experiencia de usuario, se ha seguido actualizando el código #[i HTML].
-    p.mb-0 Se invita a conocer algunas funcionalidades y beneficios de #[i HTML]5, con respecto a multimedia, estudiando atentamente el recurso que se muestra a continuación:
+    p En respuesta a la normal evolución de los sisTemas informáticos y la necesidad permanente de mejorar las funcionalidades de desarrollo y la experiencia de usuario, se ha seguido actualizando el código HTML.
+    p.mb-4 Se invita a conocer algunas funcionalidades y beneficios de HTML5, con respecto a multimedia, estudiando atentamente el recurso que se muestra a continuación:
 
     TabsB.color-acento-botones.mb-5
       .py-4.BG02.py-md-5(titulo="Video" :icono="require('@/assets/curso/Temas/tema2/img22.svg')")
-          p.mb-0
-            | Este elemento utiliza etiquetas de apertura y de cierre &lt;video&gt; y solo es obligatorio colocar la ruta de acceso al video src; además de algunos atributos para el control del elemento como: width y heigth, para el tamaño en el que se va a mostrar el video en owser.
+        .px-4
+          p.mb-4 Este elemento utiliza etiquetas de apertura y de cierre &lt;video&gt; y solo es obligatorio colocar la ruta de acceso al video #[b src]; además de algunos atributos para el control del elemento como: #[i #[b width]] y #[i #[b heigth]], para el tamaño en el que se va a mostrar el video en el #[i browser].
     
           .row
             .col-2
@@ -250,47 +248,48 @@
                 img(src="@/assets/curso/Temas/tema2/img26.png" alt="Adornos flotantes")
 
       .py-4.BG02.py-md-5(titulo="Atributos de video" :icono="require('@/assets/curso/Temas/tema2/img23.svg')")
-        p.mb-4 
-          p.mb-0 Algunos atributos adicionales de video son el autoplay, utilizado para indicar al navegador que se reproducirá automáticamente. Así mismo, el loop que permite reproducir de neuvo el video cuando lelgue al final. Con esta etiqueta y estos atributos es posible ubicar los videos dentro un sitio o aplicación web.
-          .row
-            .col-2
-            .col-8
-              .tarjeta.color-primario.p-0.mt-3.overflow-hidden
-                .px-3.py-2(style="background-color: #311a6a; display: flex; align-items: center;")
-                  .d-flex
-                    .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #81d4fa;")
-                    .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #b39ddb;")
-                    .circle(style="width: 12px; height: 12px; border-radius: 50%; background-color: #4dd0e1;")
-                .p-4(style="background-color: #0d0d2b;")
-                  .row.align-items-center
-                    .col-md-5.mb-3.mb-md-0
-                      h4.text-white &lt;!DOCTYPE #[i HTML]&gt;
-                        p.text-white.mb-1
-                          | &lt;#[i HTML] Lang="es"&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;head&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;title&gt; Reproductor de Video &lt;/title&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;/head&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;body&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;section id="reproductor"&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;video src="https://www.youtube.com/watch?v=U_exqn8Khp" controls&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;/video&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;/section&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;/body&gt;
-                        p.text-white.mb-0
-                          | &lt;/#[i HTML]&gt;
+        .px-4
+          p.mb-4 
+            p.mb-0 Algunos atributos adicionales de video son el #[i autoplay], utilizado para indicar al navegador que se reproducirá automáticamente. Así mismo, el loop que permite reproducir de neuvo el video cuando lelgue al final. Con esta etiqueta y estos atributos es posible ubicar los videos dentro un sitio o aplicación #[i web].
+            .row
+              .col-2
+              .col-8
+                .tarjeta.color-primario.p-0.mt-3.overflow-hidden
+                  .px-3.py-2(style="background-color: #311a6a; display: flex; align-items: center;")
+                    .d-flex
+                      .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #81d4fa;")
+                      .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #b39ddb;")
+                      .circle(style="width: 12px; height: 12px; border-radius: 50%; background-color: #4dd0e1;")
+                  .p-4(style="background-color: #0d0d2b;")
+                    .row.align-items-center
+                      .col-md-5.mb-3.mb-md-0
+                        h4.text-white &lt;!DOCTYPE #[i HTML]&gt;
+                          p.text-white.mb-1
+                            | &lt;#[i HTML] Lang="es"&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;head&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;title&gt; Reproductor de Video &lt;/title&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;/head&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;body&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;section id="reproductor"&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;video src="https://www.youtube.com/watch?v=U_exqn8Khp" controls&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;/video&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;/section&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;/body&gt;
+                          p.text-white.mb-0
+                            | &lt;/#[i HTML]&gt;
 
       .py-4.BG02.py-md-5(titulo="Audio" :icono="require('@/assets/curso/Temas/tema2/img24.svg')")
-          p.mb-0
-            | Este elemento utiliza la etiqueta &lt;audio&gt;, así como el video. Es decir, utilzia casi los mismos atributos del elemento video
+        .px-4
+          p Este elemento utiliza la etiqueta &lt;audio&gt;, así como el video. Es decir, utilzia casi los mismos atributos del elemento video
     
           .row
             .col-2
@@ -299,81 +298,81 @@
                 img(src="@/assets/curso/Temas/tema2/img28.png" alt="Adornos flotantes")
 
       .py-4.BG02.py-md-5(titulo="Atributos de audio" :icono="require('@/assets/curso/Temas/tema2/img25.svg')")
-        p.mb-0 El atributo obligatorio es la ruta del archivo de audio, también cuenta con el atributo autoplay y loop que tiene el msimo comportamiento que el video.
-          .row
-            .col-2
-            .col-8
-              .tarjeta.color-primario.p-0.mt-3.overflow-hidden
-                .px-3.py-2(style="background-color: #311a6a; display: flex; align-items: center;")
-                  .d-flex
-                    .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #81d4fa;")
-                    .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #b39ddb;")
-                    .circle(style="width: 12px; height: 12px; border-radius: 50%; background-color: #4dd0e1;")
-                .p-4(style="background-color: #0d0d2b;")
-                  .row.align-items-center
-                    .col-md-5.mb-3.mb-md-0
-                      h4.text-white &lt;!DOCTYPE #[i HTML]&gt;
-                        p.text-white.mb-1
-                          | &lt;#[i HTML] Lang="es"&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;head&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;title&gt; Reproductor de Audio &lt;/title&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;/head&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;body&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;section id="reproductor"&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;audio src="https://minkbooks.com/content/beach.mp3" controls&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;/audio&gt;
-                        p.text-white.ms-5.mb-1
-                          | &lt;/section&gt;
-                        p.text-white.ms-3.mb-1
-                          | &lt;/body&gt;
-                        p.text-white.mb-0
-                          | &lt;/#[i HTML]&gt;
+        .px-4
+          p.mb-0 El atributo obligatorio es la ruta del archivo de audio, también cuenta con el atributo #[i autoplay] y #[i loop] que tiene el msimo comportamiento que el video.
+            .row
+              .col-2
+              .col-8
+                .tarjeta.color-primario.p-0.mt-3.overflow-hidden
+                  .px-3.py-2(style="background-color: #311a6a; display: flex; align-items: center;")
+                    .d-flex
+                      .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #81d4fa;")
+                      .circle.me-1(style="width: 12px; height: 12px; border-radius: 50%; background-color: #b39ddb;")
+                      .circle(style="width: 12px; height: 12px; border-radius: 50%; background-color: #4dd0e1;")
+                  .p-4(style="background-color: #0d0d2b;")
+                    .row.align-items-center
+                      .col-md-5.mb-3.mb-md-0
+                        h4.text-white &lt;!DOCTYPE #[i HTML]&gt;
+                          p.text-white.mb-1
+                            | &lt;#[i HTML] Lang="es"&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;head&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;title&gt; Reproductor de Audio &lt;/title&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;/head&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;body&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;section id="reproductor"&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;audio src="https://minkbooks.com/content/beach.mp3" controls&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;/audio&gt;
+                          p.text-white.ms-5.mb-1
+                            | &lt;/section&gt;
+                          p.text-white.ms-3.mb-1
+                            | &lt;/body&gt;
+                          p.text-white.mb-0
+                            | &lt;/#[i HTML]&gt;
             
     .titulo-segundo.color-secundario
       h2 2.3 Referencias y etiquetas
+    .tarjeta--BMG04.px-5
 
-
-    p.mb-0 Acceda a cada uno de los siguientes enlaces para tener mayor entendimiento de esta temática:
-    .row
-      .col-2
-      .col-8
-        figure
-          img(src="@/assets/curso/Temas/tema2/img30.png" alt="Adornos flotantes")
-    //- Tarjeta de Descarga
-    .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
-      .row.justify-content-around.align-items-center
-        .col-3.col-sm-2.col-lg-1
-          img(src="@/assets/curso/Temas/tema2/img31.svg")
-        .col
-          .row.justify-content-between.align-items-center
-            .col.mb-3.mb-sm-0
-              h3.mb-1 Referencias y etiquetas
-              p.text-small Conozca con mayor detalle, aspectos de suma importancia en lo relacionado con referencias y etiquetas, encontrando un listado de etiquetas que son las que comúnmente se emplean para la construcción de sitios o interfaces web.
-            .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_RerefenciasYEtiquetas.pdf')" target="_blank")
-                span Descargar
-                i.fas.file-download
-    //- Tarjeta de Descarga
-    .tarjeta.color-primario.p-3.mb-0(data-aos="zoom-in")
-      .row.justify-content-around.align-items-center
-        .col-3.col-sm-2.col-lg-1
-          img(src="@/assets/curso/Temas/tema2/img32.svg")
-        .col
-          .row.justify-content-between.align-items-center
-            .col.mb-3.mb-sm-0
-              h3.mb-1 #[i HTML]: Lenguaje de etiquetas de hipertexto
-              p.text-small Si desea encontrar y conocer con mayor detalle, un compendio de las etiquetas completas y actualizadas, ingrese y explore el enlace que aquí se propone.
-            .col-sm-auto
-              a.boton.color-acento-botones(:href="'https://developer.mozilla.org/es/docs/Web/#[i HTML]'" target="_blank")
-                span Enlace Web
-                i.fas.file-download
+      p.mb-4 Acceda a cada uno de los siguientes enlaces para tener mayor entendimiento de esta temática:
+      .row.row.justify-content-center.align-items-center.mb-5
+        .col-lg-8
+          figure
+            img(src="@/assets/curso/Temas/tema2/img30.png" alt="Adornos flotantes")
+      //- Tarjeta de Descarga
+      .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
+        .row.justify-content-around.align-items-center
+          .col-3.col-sm-2.col-lg-1
+            img(src="@/assets/curso/Temas/tema2/img31.svg")
+          .col
+            .row.justify-content-between.align-items-center
+              .col.mb-3.mb-sm-0
+                h3.mb-1 Referencias y etiquetas
+                p Conozca con mayor detalle, aspectos de suma importancia en lo relacionado con referencias y etiquetas, encontrando un listado de etiquetas que son las que comúnmente se emplean para la construcción de sitios o interfaces web.
+              .col-sm-auto
+                a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_RerefenciasYEtiquetas.pdf')" target="_blank")
+                  span Descargar
+                  i.fas.file-download
+      //- Tarjeta de Descarga
+      .tarjeta.color-primario.p-3.mb-0(data-aos="zoom-in")
+        .row.justify-content-around.align-items-center
+          .col-3.col-sm-2.col-lg-1
+            img(src="@/assets/curso/Temas/tema2/img32.svg")
+          .col
+            .row.justify-content-between.align-items-center
+              .col.mb-3.mb-sm-0
+                h3.mb-1 #[i HTML]: Lenguaje de etiquetas de hipertexto
+                p Si desea encontrar y conocer con mayor detalle, un compendio de las etiquetas completas y actualizadas, ingrese y explore el enlace que aquí se propone.
+              .col-sm-auto
+                a.boton.color-acento-botones(:href="'https://developer.mozilla.org/es/docs/Web/#[i HTML]'" target="_blank")
+                  span Enlace Web
+                  i.fas.file-download
 </template>
 
 <script>

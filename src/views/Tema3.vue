@@ -28,46 +28,46 @@
     separador
     .titulo-segundo.color-primario
       h2 3.1. Referencias de estilos y propiedades de #[i CSS]3
-   
-    p.md-5 Con relación a las referencias de estilos, existe una guía básica de estilos muy comunes y bastante utilizados, con los que se puede dar formato a las páginas web.
-   
-    .row.justify-content-center.align-items-center
-      .col-lg-4
-        figure
-          img(src="@/assets/curso/Temas/tema3/img3.png", alt="alt")
-      .col-lg-8
-        //- Tarjeta de Descarga
-        .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
-          .row.justify-content-around.align-items-center
-            .col-4.col-sm-3.col-lg-2
-              img(src="@/assets/curso/Temas/tema3/img4.svg")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  h3.mb-1 Referencias de estilos y propiedades #[i CSS]3
-                  p.text-small Explore este documento y encuentre allí los estilos de uso más frecuente, en la asignación de formato en la creación de páginas web.
-                .col-sm-auto
-                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_RerefenciasYEtiquetas.pdf')" target="_blank")
-                    span Descargar
-                    i.fas.file-download
-        //- Tarjeta de Descarga
-        .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
-          .row.justify-content-around.align-items-center
-            .col-4.col-sm-3.col-lg-2
-              img(src="@/assets/curso/Temas/tema3/img5.svg")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  h3.mb-1 #[i CSS]
-                  p.text-small Todos los elementos de estilo actualizados pueden ser encontrados, navegando esta página web.
-                .col-sm-auto
-                  a.boton.color-acento-botones(href="https://developer.mozilla.org/es/docs/Web/#[i CSS]" target="_blank")
-                    span Enlace Web
-                    i.fas.file-download
+    .tarjeta--BMG05.px-5
+      p.md-5 Con relación a las referencias de estilos, existe una guía básica de estilos muy comunes y bastante utilizados, con los que se puede dar formato a las páginas web.
+    
+      .row.justify-content-center.align-items-center
+        .col-lg-4
+          figure
+            img(src="@/assets/curso/Temas/tema3/img3.png", alt="alt")
+        .col-lg-8
+          //- Tarjeta de Descarga
+          .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
+            .row.justify-content-around.align-items-center
+              .col-4.col-sm-3.col-lg-2
+                img(src="@/assets/curso/Temas/tema3/img4.svg")
+              .col
+                .row.justify-content-between.align-items-center
+                  .col.mb-3.mb-sm-0
+                    h3.mb-1 Referencias de estilos y propiedades #[i CSS]3
+                    p.text-small Explore este documento y encuentre allí los estilos de uso más frecuente, en la asignación de formato en la creación de páginas web.
+                  .col-sm-auto
+                    a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_RerefenciasYEtiquetas.pdf')" target="_blank")
+                      span Descargar
+                      i.fas.file-download
+          //- Tarjeta de Descarga
+          .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
+            .row.justify-content-around.align-items-center
+              .col-4.col-sm-3.col-lg-2
+                img(src="@/assets/curso/Temas/tema3/img5.svg")
+              .col
+                .row.justify-content-between.align-items-center
+                  .col.mb-3.mb-sm-0
+                    h3.mb-1 #[i CSS]
+                    p.text-small Todos los elementos de estilo actualizados pueden ser encontrados, navegando esta página web.
+                  .col-sm-auto
+                    a.boton.color-acento-botones(href="https://developer.mozilla.org/es/docs/Web/#[i CSS]" target="_blank")
+                      span Enlace Web
+                      i.fas.file-download
     separador
     .titulo-segundo.color-primario
       h2 3.2. Selectores
-    .row
+    .row.justify-content-center.align-items-center.mb-4
       .col-1
         figure
           img(src="@/assets/curso/Temas/tema3/img6.svg" alt="Adornos flotantes")
