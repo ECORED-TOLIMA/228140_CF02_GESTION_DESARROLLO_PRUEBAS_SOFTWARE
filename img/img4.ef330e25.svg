@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="916" height="234.267" viewBox="0 0 916 234.267">
+  <g id="img4" transform="translate(2822 11436.773)">
+    <g id="Group_1179790" data-name="Group 1179790" transform="translate(-2822 -11436.773)">
+      <g id="Group_1179221" data-name="Group 1179221" transform="translate(0)">
+        <path id="Rectangle_389225" data-name="Rectangle 389225" d="M9,0H907a9,9,0,0,1,9,9V43a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V9A9,9,0,0,1,9,0Z" transform="translate(0)" fill="#3a1d71"/>
+        <path id="Rectangle_389226" data-name="Rectangle 389226" d="M0,0H916a0,0,0,0,1,0,0V182.267a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V0A0,0,0,0,1,0,0Z" transform="translate(0 43)" fill="#110628"/>
+        <circle id="Ellipse_11380" data-name="Ellipse 11380" cx="6" cy="6" r="6" transform="translate(25 15)" fill="#9ecfff"/>
+        <ellipse id="Ellipse_11381" data-name="Ellipse 11381" cx="6.5" cy="6" rx="6.5" ry="6" transform="translate(52 15)" fill="#cf9eff"/>
+        <ellipse id="Ellipse_11382" data-name="Ellipse 11382" cx="6.5" cy="6" rx="6.5" ry="6" transform="translate(79 15)" fill="#61e9c3"/>
+      </g>
+    </g>
+    <g id="Group_1179789" data-name="Group 1179789" transform="translate(-3273.551 -13510)">
+      <g id="Group_70213" data-name="Group 70213" transform="translate(-63 -3231.399)">
+        <text id="document.querySelector_.bloque3_" data-name="document.querySelector(&apos;.bloque3&apos;);" transform="translate(560 5420.574)" fill="#fff" font-size="18" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">document.querySelector(&apos;.bloque3&apos;);</tspan></text>
+        <text id="document.querySelector_div_" data-name="document.querySelector(&apos;div&apos;);" transform="translate(560 5477.574)" fill="#fff" font-size="18" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">document.querySelector(&apos;div&apos;);</tspan></text>
+        <text id="_busqueda_por_clase" data-name="//busqueda por clase" transform="translate(560 5390.574)" fill="#68fbd2" font-size="18" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">//busqueda por clase</tspan></text>
+        <text id="_busqueda_por_tipo" data-name="//busqueda por tipo" transform="translate(560 5450.574)" fill="#68fbd2" font-size="18" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">//busqueda por tipo</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
