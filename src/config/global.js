@@ -2,7 +2,7 @@ export default {
   global: {
     Name: 'Tecnologías para el desarrollo de aplicaciones <em>web</em>',
     Description:
-      'Este componente formativo pretende mostrar el desarrollo web utilizando lenguajes como HTML5, CSS y JSS; explicando, además, sus funciones, componentes y semántica, junto a las bondades que brinda trabajar desarrollos independientes de la parte del servidor y para el usuario, llamado <i>frontend</i>. Mostrará, también, cómo mezclando estos lenguajes se pueden crear grandes y complejos desarrollos <i>web</i>.',
+      'Este componente formativo pretende mostrar el desarrollo <em>web</em> utilizando lenguajes como HTML5, CSS y JSS; explicando, además, sus funciones, componentes y semántica, junto a las bondades que brinda trabajar desarrollos independientes de la parte del servidor y para el usuario, llamado <i>frontend</i>. Mostrará, también, cómo mezclando estos lenguajes se pueden crear grandes y complejos desarrollos <i>web</i>.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -42,12 +42,12 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Estructura de una página web',
+        titulo: 'Estructura de una página <em>web</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Estructura del cuerpo de una página web',
+            titulo: 'Estructura del cuerpo de una página <em>web</em>',
             hash: 't_2_1',
           },
           {
@@ -149,7 +149,7 @@ export default {
     {
       tema: '',
       referencia: '',
-      tipo: 'Sitio web',
+      tipo: 'Sitio <em>web</em>',
       link: '',
     },
   ],
@@ -172,7 +172,7 @@ export default {
     {
       termino: '<em>Browser</em>',
       significado:
-        'término inglés que se utiliza para identificar a un navegador web o navegador de Internet. Consiste en un <em>software</em>, programa o incluso aplicación, que ofrece al usuario el acceso a la red.',
+        'término inglés que se utiliza para identificar a un navegador <em>web</em> o navegador de Internet. Consiste en un <em>software</em>, programa o incluso aplicación, que ofrece al usuario el acceso a la red.',
     },
     {
       termino: 'Depurar',
@@ -210,12 +210,12 @@ export default {
         'parte de la gramática que estudia el modo en que se combinan las palabras y los grupos que estas forman para expresar significados, así como las relaciones que se establecen entre todas esas unidades.',
     },
     {
-      termino: 'Sitio web',
+      termino: 'Sitio <em>web</em>',
       significado:
-        'conjunto de páginas web accesibles a través de internet, convenientemente enlazadas y con una finalidad concreta.',
+        'conjunto de páginas <em>web</em> accesibles a través de internet, convenientemente enlazadas y con una finalidad concreta.',
     },
     {
-      termino: 'Web',
+      termino: '<em>Web</em>',
       significado:
         'conjunto de información que se encuentra en una dirección determinada de internet.',
     },
@@ -223,12 +223,12 @@ export default {
   referencias: [
     {
       referencia:
-        '100 Web Hosting. (s.f.). Referencia Etiquetas HTML5. [Web log post]. Cafetero 100.',
+        '100 <em>Web</em> Hosting. (s.f.). Referencia Etiquetas HTML5. [Web log post]. Cafetero 100.',
       link: 'https://www.cafetero100.com/manual-html5/',
     },
     {
       referencia:
-        'Crea tu web creando internet. (s.f.). Estilos CSS: referencia. [Web log post]. Espaciolatino.',
+        'Crea tu <em>web</em> creando internet. (s.f.). Estilos CSS: referencia. [Web log post]. Espaciolatino.',
       link: 'https://creatuweb.espaciolatino.com/tutorhtml/tema17.html',
     },
     {
@@ -237,17 +237,18 @@ export default {
       link: 'https://profile.es/blog/librerias-javascript/',
     },
     {
-      referencia: 'Mdn web docs. (2021). File. [Web log post]. MDN Web Docs.',
+      referencia:
+        'Mdn <em>web</em> docs. (2021). File. [Web log post]. MDN Web Docs.',
       link: 'https://developer.mozilla.org/es/docs/Web/API/File',
     },
     {
       referencia:
-        'Mdn web docs. (2021). WebSockets. [Web log post]. MDN Web Docs.',
+        'Mdn <em>web</em> docs. (2021). WebSockets. [Web log post]. MDN Web Docs.',
       link: 'https://developer.mozilla.org/es/docs/Web/API/WebSockets_API',
     },
     {
       referencia:
-        'Mdn web docs. (2021). Almacenamiento. [Web log post]. MDN Web Docs.',
+        'Mdn <em>web</em> docs. (2021). Almacenamiento. [Web log post]. MDN Web Docs.',
       link: 'https://developer.mozilla.org/es/docs/Web/API/Storage',
     },
     {
@@ -261,14 +262,15 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre completo',
-          cargo: 'Responsable del ecosistema',
+          nombre: 'Claudia Johanna Gómez Pérez',
+          cargo:
+            'Responsable Ecosistema de Recursos Educativos Digitales (RED)',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Nombre completo',
+          nombre: 'Diana Rocío Possos Beltrán',
           cargo: 'Responsable de línea de producción',
-          centro: 'Centro XYZ - Regional XYZ',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
       ],
     },
@@ -276,9 +278,14 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Solanlly Sánchez Melo',
+          cargo: 'Experta temática',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+        },
+        {
+          nombre: 'Andrés Felipe Velandia Espitia',
+          cargo: 'Evaluador instruccional',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
       ],
     },
@@ -286,19 +293,39 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Diseñador de contenidos',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Oscar Ivan Uribe Ortiz',
+          cargo: 'Diseñador de contenidos digitales',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Desarrollador <i>full stack</i>',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Juan Daniel Polanco Muñoz',
+          cargo: 'Diseñador de contenidos digitales',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Veimar Celis Meléndez',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          cargo: 'Desarrollador <em>full stack</em>',
+        },
+        {
+          nombre: 'Francisco José Vásquez Suárez',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          cargo: 'Desarrollador <em>full stack</em>',
+        },
+        {
+          nombre: 'Manuel Felipe Echavarria Orozco',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          cargo: 'Desarrollador <em>full stack</em>',
+        },
+        {
+          nombre: 'Ernesto Navarro Jaimes',
           cargo: 'Animador y productor audiovisual',
-          centro: 'Centro XYZ - Regional XYZ',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+        },
+        {
+          nombre: 'Gilberto Junior Rodríguez Rodríguez',
+          cargo: 'Animador y productor audiovisual',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
       ],
     },
@@ -306,14 +333,19 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'María Fernanda Pineda Mora',
+          cargo: 'Evaluadora de contenidos inclusivos y accesibles',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Javier Mauricio Oviedo',
+          cargo: 'Validador y vinculador de recursos educativos digitales',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+        },
+        {
+          nombre: 'Jorge Bustos Gómez',
+          cargo: 'Validador y vinculador de recursos educativos digitales',
+          centro: 'Centro de Comercio y Servicios - Regional Tolima',
         },
       ],
     },

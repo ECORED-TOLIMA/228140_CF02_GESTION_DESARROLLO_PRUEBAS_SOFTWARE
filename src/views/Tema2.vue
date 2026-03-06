@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
-      h1 Estructura de una página web
+      h1 Estructura de una página #[i web]
     .BMG1.px-5
       .row.justify-content-center.mb-4
         .col-lg-12.contenido-sobrepuesto
@@ -13,7 +13,7 @@
             img(src="@/assets/curso/Temas/tema2/img1.png" alt="Adornos flotantes")
       
       p Los documentos HTML son estructuras de código estrictamente organizadas, allí se utilizan etiquetas en donde se puede declarar y determinar la forma específica del funcionamiento o apariencia del contenido
-      p En este punto del componente formativo, se indica cómo se construye la estructura global de un documento HTML:
+      p.mb-5 En este punto del componente formativo, se indica cómo se construye la estructura global de un documento HTML:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-10
         LineaTiempoD.color-acento-botones
@@ -205,18 +205,15 @@
           img(src="@/assets/curso/Temas/tema2/img20.png" alt="Imagen decorativa")
       
       .col-lg-8.col-md-7
-        //- Contenedor del Título con el Logo
-        .contenedor-titulo.d-flex.align-items-center.mb-4(data-aos="fade-left")
-          .logo-box.me-3
-            i.fas.code-terminal.text-white
-          .titulo-bg.py-2.px-4
-            h4.mb-0 Elementos del contenido
+        .titulo.mb-4(data-aos="fade-left")
+          img(src='@/assets/curso/icon.svg', alt='Imagen decorativa')
+          h5 Elementos del contenido
         
         p.mb-3 La mayoría de elementos vistos hasta este punto del componente, son elementos orientados a ofrecer metadatos (para los motores de búsqueda, &lt;meta&gt;, &lt;title&gt;) o de estructura (&lt;header&gt;, &lt;body&gt;). A continuación, se verán aquellos elementos usados para segmentar los contenidos dentro de una página o interfaz web o, simplemente, para diferenciar los contenidos de la página.
 
 
     //- Tarjeta de Descarga
-    .tarjeta.BG03.p-3(data-aos="zoom-in")
+    .tarjeta.BG04.p-3(data-aos="zoom-in")
       .row.justify-content-around.align-items-center
         .col-3.col-sm-2.col-lg-1
           img(src="@/assets/curso/Temas/tema2/img21.svg")
@@ -227,8 +224,8 @@
               p Para afianzar su saber en lo relacionado con los elementos del contenido, acceda a este documento. Recuerde llevar registro de los aspectos más destacados e importantes, en sueta personal de apuntes.
             .col-sm-auto
               a.boton.color-acento-botones(:href="obtenerLink('/downloads/Elementos_del_contenido.pdf')" target="_blank")
-                span Descargar
-                i.fas.file-download
+                span Descargar                
+                i.fas.fa-file-download
     separador
     .titulo-segundo.color-acento-contenido
       h2 2.2 Nuevos elementos HTML5
@@ -346,7 +343,7 @@
           figure
             img(src="@/assets/curso/Temas/tema2/img30.png" alt="Adornos flotantes")
       //- Tarjeta de Descarga
-      .tarjeta.color-primario.p-3.mb-5(data-aos="zoom-in")
+      .tarjeta.BG04.p-3.mb-5(data-aos="zoom-in")
         .row.justify-content-around.align-items-center
           .col-3.col-sm-2.col-lg-1
             img(src="@/assets/curso/Temas/tema2/img31.svg")
@@ -354,25 +351,25 @@
             .row.justify-content-between.align-items-center
               .col.mb-3.mb-sm-0
                 h3.mb-1 Referencias y etiquetas
-                p Conozca con mayor detalle, aspectos de suma importancia en lo relacionado con referencias y etiquetas, encontrando un listado de etiquetas que son las que comúnmente se emplean para la construcción de sitios o interfaces web.
+                p Conozca con mayor detalle, aspectos de suma importancia en lo relacionado con referencias y etiquetas, encontrando un listado de etiquetas que son las que comúnmente se emplean para la construcción de sitios o interfaces #[i web].
               .col-sm-auto
                 a.boton.color-acento-botones(:href="obtenerLink('/downloads/Anexo_2_RerefenciasYEtiquetas.pdf')" target="_blank")
                   span Descargar
-                  i.fas.file-download
+                  i.fas.fa-file-download
       //- Tarjeta de Descarga
-      .tarjeta.color-primario.p-3.mb-0(data-aos="zoom-in")
+      .tarjeta.BG04.p-3.mb-0(data-aos="zoom-in")
         .row.justify-content-around.align-items-center
           .col-3.col-sm-2.col-lg-1
             img(src="@/assets/curso/Temas/tema2/img32.svg")
           .col
             .row.justify-content-between.align-items-center
               .col.mb-3.mb-sm-0
-                h3.mb-1 #[i HTML]: Lenguaje de etiquetas de hipertexto
+                h3.mb-1 HTML: Lenguaje de etiquetas de hipertexto
                 p Si desea encontrar y conocer con mayor detalle, un compendio de las etiquetas completas y actualizadas, ingrese y explore el enlace que aquí se propone.
               .col-sm-auto
                 a.boton.color-acento-botones(:href="'https://developer.mozilla.org/es/docs/Web/#[i HTML]'" target="_blank")
                   span Enlace Web
-                  i.fas.file-download
+                  i.fas.fa-file-code
 </template>
 
 <script>

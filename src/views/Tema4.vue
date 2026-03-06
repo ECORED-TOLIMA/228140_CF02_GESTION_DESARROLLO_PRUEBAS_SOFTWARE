@@ -5,8 +5,8 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 4
-      h1 Tema 4
-    .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-4
+      h1 JavaScript
+    .bloque-texto-g.bloque-texto-g--inverso.color-primario.p-3.p-sm-4.p-md-5.mb-5
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require('@/assets/curso/Temas/tema4/img1.png')})`}"
       )
@@ -16,15 +16,13 @@
         br
         p.mb-0 Es momento de profundizar en los elementos de empleo del JavaScript y para ello, se sugiere la siguiente información, procurando llevar registro de los aspectos más destacados en la libreta personal de apuntes
 
-    .contenedor-titulo.d-flex.align-items-center.mb-4(data-aos="fade-left")
-      .logo-box.me-3
-        i.fas.code-terminal.text-white
-      .titulo-bg.py-2.px-4
-        h4.mb-0 Empleo de JavaScript
-    br
-    p.mb-0 JavaScript se utiliza, normalmente, en la #[i web] pero también para:
-    br
-    .tarjeta.BG03.p-4
+    .titulo.mb-4(data-aos="fade-left")
+      img(src='@/assets/curso/icon.svg', alt='Imagen decorativa')
+      h5 Empleo de JavaScript
+
+    p.mb-4 JavaScript se utiliza, normalmente, en la #[i web] pero también para:
+
+    .tarjeta.BG03.p-4.mb-4
       .row
         .col-lg-3
           figure
@@ -36,11 +34,10 @@
           p.mb-0 • Bases de datos.
           p.mb-0 • Plataformas de juego.
           p.mb-0 • Desarrollo móvil.
-    br
-    p Las siguientes acciones se deben tener en cuenta en este proceso:
-    br
-    .row
-      .col-1
+
+    p.mb-4 Las siguientes acciones se deben tener en cuenta en este proceso:
+
+    .row.justify-content-center.align-items-center.mb-5
       .col-10
         AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
           //- Primer fila: Selectores
@@ -311,8 +308,8 @@
                 .p-4(style="background-color: #0d0d2b;")
                   .row.align-items-center
                     .col-md-5.mb-3.mb-md-0
-                       p.code-comment.mb-2 // Create #[i WebSocket] connection.
-                       p.text-white.mb-2 const socket = new #[i WebSocket]('ws://localhost:8080');
+                       p.code-comment.mb-2 // Create WebSocket connection.
+                       p.text-white.mb-2 const socket = new WebSocket ('ws://localhost:8080');
                        p.text-white.mb-2 
                        p.code-comment.mb-2 // Connection opened
                        p.text-white.mb-2 socket.addEventListener('open', function (event) {
